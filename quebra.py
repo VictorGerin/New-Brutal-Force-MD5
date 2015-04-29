@@ -14,7 +14,10 @@ __date__ = "$26/04/2015 05:38:0$"
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Programa para quebrar HASHs usando tecnica de algoritimo genetico')
+    parser = argparse.ArgumentParser(
+        description='Programa para quebrar HASHs usando algoritimo genetico, eu sei eu sei ... isso parece mais um brutal force um pouco mais lento se voce concorda com isso me mande um email para como deixar mais rapido :)',
+        epilog='Author : Victor Gerin de Lacerda, Email : gerinlacerda@gmail.com'
+    )
     parser.add_argument('hash', help='MD5 a tentar quebrar')
     parser.add_argument('-min', dest='min', default=1, type=int, help='Tamanho minimo que uma senha gerada pode ter')
     parser.add_argument('-max', dest='max', default=10, type=int, help='Tamanho maximo que uma senha gerada pode ter')
